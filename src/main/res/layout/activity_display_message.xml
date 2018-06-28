@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/court"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:id="@+id/text1"
+                android:layout_width="@android:dimen/notification_large_icon_height"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:background="@drawable/cavaliers"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/textViewA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="top|bottom|left|center_vertical|center_horizontal|center|start"
+                android:padding="4dp"
+                android:text="cleveland cavaliers"
+                android:textAllCaps="true"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addThreeForTeamA"
+                android:text="+3 Points" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addTwoForTeamA"
+                android:text="+2 Points" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addOneForTeamA"
+                android:text="Free throw" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="@android:dimen/notification_large_icon_height"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:background="@drawable/lakerss"
+                android:gravity="center_vertical"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/textViewB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="LOS ANGELES LAKERS"
+                android:textAllCaps="true"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="28sp" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addThreeForTeamB"
+                android:text="+3 Points" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addTwoForTeamB"
+                android:text="+2 Points" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addOneForTeamB"
+                android:text="Free Throw" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:onClick="resetGame"
+        android:text="RESET" />
+
+
+</RelativeLayout>

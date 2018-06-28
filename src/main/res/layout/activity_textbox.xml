@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/court"
+    android:gravity="center"
+    tools:context=".Textbox"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/teamA"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:text="Team A Name"
+            android:textColor="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/teamB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:text="Team B Name"
+            android:textColor="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="120dp"
+        android:onClick="submitTeams"
+        android:text="SUBMIT" />
+
+
+</RelativeLayout>
